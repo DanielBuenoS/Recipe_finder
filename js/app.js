@@ -142,12 +142,12 @@ function startApp() {
         modalBody.appendChild(listGroup);
 
         const modalFooter = document.querySelector('.modal-footer');
-        limpiarHTML(modalFooter);
+        cleanHTML(modalFooter);
 
         // Close and Favorite buttons
         const btnFavorite = document.createElement('BUTTON');
         btnFavorite.classList.add('btn', 'btn-danger', 'col');
-        btnFavorite.textContent = existeStorage(idMeal) ? 'Remove Favorite' : 'Save Favorite';
+        btnFavorite.textContent = existStorage(idMeal) ? 'Remove Favorite' : 'Save Favorite';
 
         // LocalStorage
 
